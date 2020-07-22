@@ -14,6 +14,9 @@ Vue.use(VueRouter);
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
+import VueSweetalert2 from 'vue-sweetalert2';
+Vue.use(VueSweetalert2);
+
 import App from './App.vue';
 Vue.use(VueAxios, axios);
 
@@ -33,16 +36,16 @@ const routes = [
         path: '/contact/create',
         component: ContactCreate
     },
-    // {
-    //     name: 'show',
-    //     path: '/contact/show/:id',
-    //     component: ContactShow
-    // },
-    // {
-    //     name: 'edit',
-    //     path: '/contact/edit/:id',
-    //     component: ContactEdit
-    // }
+    {
+        name: 'show',
+        path: '/contact/show/:id',
+        component: ContactShow
+    },
+    {
+        name: 'edit',
+        path: '/contact/edit/:id',
+        component: ContactEdit
+    }
 ]
 
 const router = new VueRouter({ mode: 'history', routes: routes});

@@ -2,7 +2,7 @@
     <div id="app" class="page">
         <nav class='navbar navbar-dark bg-dark'>
             <div class='container'>
-                <router-link :to="{ name: 'home' }" class="navbar-brand">Ilmu Coding</router-link>
+                <router-link :to="{ name: 'home' }" class="navbar-brand">KONTAK KU</router-link>
             </div>
         </nav>
         <router-view></router-view>
